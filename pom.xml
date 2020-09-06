@@ -12,7 +12,7 @@
 	<artifactId>service</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<name>springboot-service</name>
-	<description>Springboot Ecoomerce Application</description>
+	<description>Springboot Service Application</description>
 
 	<properties>
 		<java.version>1.8</java.version>
