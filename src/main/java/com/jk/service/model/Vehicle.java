@@ -1,12 +1,9 @@
 package com.jk.service.model;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 
 @Entity
 public class Vehicle {
@@ -21,10 +18,6 @@ public class Vehicle {
 	private long vin;
 	private long tareWeight;
 	private long grossMass;
-	
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name="insurer_id", referencedColumnName = "id")
-	private Insurer insurer;
 
 	public Vehicle() {
 		
@@ -93,14 +86,5 @@ public class Vehicle {
 	public void setGrossMass(long grossMass) {
 		this.grossMass = grossMass;
 	}
-
-	public Insurer getInsurer() {
-		return insurer;
-	}
-
-	public void setInsurer(Insurer insurer) {
-		this.insurer = insurer;
-	}
-	
 		
 }
