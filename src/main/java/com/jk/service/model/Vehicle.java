@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Vehicle {
 	
@@ -23,6 +25,7 @@ public class Vehicle {
 		
 	}
 
+	@JsonIgnore
 	public long getId() {
 		return id;
 	}
